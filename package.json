@@ -1,0 +1,39 @@
+{
+  "name": "mh223vk-examination-2",
+  "version": "1.0.0",
+  "description": " a web application for persistent handling of programming code snippets using an application framework and an object data modeling library for MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "standard --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv523/mh223vk-examination-2.git"
+  },
+  "author": "MehdiHmidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv523/mh223vk-examination-2/issues"
+  },
+  "homepage": "https://github.com/1dv523/mh223vk-examination-2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.16.4",
+    "express-flash-messages": "^0.1.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "helmet": "^3.15.0",
+    "lint": "^1.1.2",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.0",
+    "mongoose-validator": "^2.1.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

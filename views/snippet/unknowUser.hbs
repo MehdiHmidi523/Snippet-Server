@@ -1,0 +1,22 @@
+<nav>
+    <ul>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+    </ul>
+</nav>
+
+<div>
+    <h3>Snippets</h3>
+    {{#if snippets }}
+    <ul>
+        {{#each snippets}}
+        <div class="card-panel">
+            <li> <b>{{title}}</b> by <b>{{createdBy}}</b> at <b>{{updatedAt}}</b> <br>
+                <code>{{code}}</code> <br></li>
+        </div>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>Snippets repo is Empty.</p>
+    {{/if}}
+</div>

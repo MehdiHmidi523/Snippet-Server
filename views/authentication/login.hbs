@@ -1,0 +1,14 @@
+{{#if error}}
+<p>Error: {{error}}</p>
+{{/if}}
+
+
+<form class="login" action="/login" method="post">
+    <h2>Login</h2>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+    <button class="btn green-button" type="submit">Login</button>
+</form>

@@ -1,0 +1,11 @@
+{{#if error}}
+    <p>Error: {{error}}</p>
+{{/if}}
+<form class="login" action="/snippet/edit/{{id}}" method="POST">
+    <label>Title</label>
+    <input type="text" name="snippetTitle" value="{{valueTitle}}"><br>
+    <label>Code</label>
+    <input type="text" style="width: 400px; height: 200px;" name="snippetCode" value="{{valueCode}}"><br>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button class="btn blue-button">Finish Editing!</button>
+</form>

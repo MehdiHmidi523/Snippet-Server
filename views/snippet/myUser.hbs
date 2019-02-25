@@ -1,0 +1,25 @@
+<nav>
+    <ul>
+        <li><a href="snippet/create/">Create a new snippet!</a></li>
+        <li><a href="/logout">Log out</a></li>
+    </ul>
+</nav>
+
+<div>
+    <h3>Snippets</h3>
+    {{#if snippets }}
+    <ul>
+        {{#each snippets}}
+        <div class="card-panel">
+            <li> <b>{{title}}</b> by <b>{{createdBy}}</b> at <b>{{updatedAt}}</b> <br>
+                <code>{{code}}</code>
+                {{#if yours}}
+                    <button class = "red-button btn" onclick="window.location.href = 'snippet/delete/{{id}}';">Delete</button> - <button  class = "blue-button btn" onclick="window.location.href='snippet/edit/{{id}}';">Edit</a> </li>
+                {{/if}}
+        </div>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>Snippets repo is Empty</p>
+    {{/if}}
+</div>

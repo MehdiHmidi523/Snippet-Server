@@ -1,0 +1,12 @@
+{{#if error}}
+    <p>Error: {{error}}</p>
+{{/if}}
+
+<form class="login" action="/snippet/create" method="POST">
+    <label>Title</label>
+    <input type="text" name="snippetTitle" value=""><br>
+    <label>Code</label>
+    <textarea name="snippetCode" value=""></textarea><br>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button class="btn green-button">Create!</button>
+</form>

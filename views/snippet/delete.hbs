@@ -1,0 +1,9 @@
+{{#if error}}
+    <p>Error: {{error}}</p>
+{{/if}}
+
+<form class="login" action="/snippet/delete/{{id}}" method="POST">
+    <label>Are you sure you want to delete this snippet?</label>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button class="btn green-button" type="submit" name="name">Yes</button>
+</form>
